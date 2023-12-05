@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+:root {
+    --primary--color: #bd1c22;
+    --secondary--color: #fff;
+    --box--bg: #f1f6fc;
+    --contact--color: #1C3988;
+    --secondary--btn-color: #1273eb;
+    --footer--bg-color: #101010;
+}
+
+*, ::before, ::after {
+    box-sizing: inherit;
+}
+
+html, body {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+iframe {
+    width: 75%;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.fs-1 {
+    font-size: 1.1rem;
+}
+
+.fs-2 {
+    font-size: 1.6rem;
+}
+
+.fs-3 {
+    font-size: 2rem;
+}
+
+.fs-4 {
+    font-size: 2.3rem;
+}
+
+.fs-5 {
+    font-size: 4rem;
+}
+
+.fw-bold {
+    font-weight: bold;
+}
+
+.fw-slight {
+    font-weight: 300;
+}
+
+.fw-bolder {
+    font-weight: bolder;
+}
+
+.text-light {
+    color: #fff;
+}
+
+.text-primary {
+    color: blue;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.lh-1 {
+    line-height: 1.5;
+}
+
+.lh-2 {
+    line-height: 1.8;
+}
+
+.lh-3 {
+    line-height: 2.2;
+}
+
+.box-shadow {
+    box-shadow: 2px 1px 15px 0px rgba(0,0,0,0.72);
+}
+
+.border-radius-normal {
+    border-radius: 6px;
+}
+
+.border-top {
+    border-top: 1px solid #333;
+}
+
+.secondary-btn {
+    padding: 12px 20px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    background: var(--secondary--btn-color);
+}
+
+.elementer-card {
+    background: var(--box--bg);
+    padding: 10px 15px;
+    margin-bottom: 15px;
+}
+
+.elementer-card-title,
+.elementer-card-icon,
+.elementer-card-content {
+    display: block;
+    text-align: center;
+}
+
+.elementer-card-title {
+    padding:20px 0px;
+}
+
+.elementer-card-icon {
+    color: var(--primary--color);
+}
+
+.intro-card:not(:last-child) {
+    border-bottom: 5px solid #fff;
+}
+
+.intro-video {
+    position: relative;
+    height: 300px;
+}
+
+.intro-video-thumd {
+    position: absolute;
+    content: "";
+    background-image: url(https://www.hitbotrobot.com/wp-content/uploads/2021/08/Z-arm-001-500x450.jpg);
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    background-position: center;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    left: 0;
+}
+
+.intro-video-btn {
+    position: absolute;
+    top: 48%;
+    left: 48%;
+}
+
+.intro-content {
+    padding: 10px 15px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.primary-btn button {
+    border-radius: 6px;
+    outline: none;
+    border: none;
+    padding: 7px 15px;
+    background: var(--primary--color);
+    cursor: pointer;
+}
+
+.product-center-box, .product-application-box,
+.exhibition-box, .certificate-box, 
+.pertners-box {
+    padding:15px 50px;
+}
+
+.product-center-card-image img {
+    width: 100%;
+    transition: all ease .6s;
+}
+
+.product-center-card-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.product-center-card-more {
+    position: absolute;
+    text-align: center;
+    bottom: -20%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    transition: all linear .3s;
+    padding: 10px 0px;
+}
+
+.product-center-card-image:hover img {
+    content: url(https://www.hitbotrobot.com/wp-content/uploads/2023/06/Z-arm-4160B-01.jpg);
+    transition: all ease .6s;
+}
+
+.product-center-card-image:hover .product-center-card-more {
+    bottom: 0;
+    transition: all linear .3s;
+} 
+
+.product-center-card-content {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.product-center-card-btn {
+    padding: 10px 0px;
+}
+
+.product-center-card-btn .btn {
+    padding: 10px 32px;
+    border-radius: 6px;
+    background: #545454;
+    border: none;
+    outline: none;
+    cursor: pointer;
+} 
+
+.product-application-card iframe {
+    width: 100%;
+}
+
+.owl-theme .owl-nav  {
+    position: absolute;
+    top: 40%;
+    width: 100%;
+}
+
+.owl-nav button.owl-prev {
+    float: left;
+}
+
+.owl-nav button.owl-next {
+    float: right;
+}
+
+.certificate-card-image {
+    border: 1px solid #333;
+    padding: 5px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.certificate-card-image img {
+    transition: all ease .3s;
+}
+
+.certificate-card-image:hover img {
+    transform: scale(1.2); 
+    transition: all ease .3s;
+}
+
+.image-zoom-container {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    transition: transform .2s;
+    transform: scale(1.5);
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+
+.image-zoom-box {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.image-zoom-box img {
+   width: 20%;
+   height: 40%;
+   display: block;
+    margin: auto;
+}
+
+.partners-card {
+    border: 1px solid #333;
+    padding: 5px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.partners-card img {
+    transition: all ease .3s;
+}
+
+.partners-card:hover img {
+    transform: scale(1.2); 
+    transition: all ease .3s;
+}
+
+.contact-form {
+    background: var(--contact--color);
+}
+
+.contact .container {
+    max-width: 700px;
+}
+
+.contact-form-item {
+    padding: 10px;
+}
+
+.contact-form-item input, textarea {
+    width: 100%;
+    padding: 20px;
+    outline: none;
+}
+
+.form-btn button {
+    cursor: pointer;
+    border-radius: 6px;
+    padding: 10px 15px;
+    background: var(--secondary--btn-color);
+    outline: none;
+    border: none;
+}
+
+.form-btn button:hover {
+    filter: brightness(1.2);
+}
+
+
+.contact {
+    position: relative;
+    background: var(--contact--color);
+}
+
+.contact-form {
+    margin: 10px 0px;
+}
+
+.elementor-shape-top svg {
+    width: calc(160% + 1.3px);
+    height: 100px;
+    transform: rotate(180deg);
+    margin-bottom: -5px;
+}
+
+.elementor-shape-top {
+    overflow: hidden;
+}
+
+.footer {
+    position: relative;
+    background: var(--footer--bg-color);
+}
+
+.footer-phone-number:hover, .footer-email:hover {
+    color: var(--primary--color);
+}
+
+.contact-us {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    padding: 15px;
+    /* z-index: 99; */
+}
+
+.contact-us-text {
+    position: relative;
+    padding: 10px;
+    background: #fff;
+    border-radius: 30px;
+}
+
+.contact-us-text::after {
+    position: absolute;
+    content: "";
+    height: 0;
+    width: 0;
+    top: 30%;
+    right: -5%;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid #fff;
+}
+
+.contact-us-icon {
+    padding: 10px;
+    background: greenyellow;
+    border-radius: 50%;
+}
+
+.contact-us:hover .contact-us-text span {
+   display: none;
+}
+
+.contact-us:hover .contact-us-text::before {
+    content: "SnappChat";
+}
